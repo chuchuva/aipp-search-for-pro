@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>@ViewBag.Title - AIPP</title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link href="http://www.aipp.com.au/App_Themes/AIPP_Austin/01-MasterPage.css" type="text/css" rel="stylesheet" />
+  <link href="http://www.aipp.com.au/App_Themes/AIPP_Austin/99-Austin.css" type="text/css" rel="stylesheet" />
+  <link href="~/Content/css/menu.css" type="text/css" rel="stylesheet" />
+  @RenderSection("ExtraHead", required: false)
+</head>
+<body id="MainBody">
+  <a href="#contentstart" class="screen-reader-text show-on-focus">Skip to main content</a>
+  <div id="masterWrapper">
+    <header id="hd" role="banner" class="ClearFix">
+      <div id="masterHeaderBackground" class="ClearFix">
+        <!-- This <div> block is for optional display of a header image -->
+        <div id="masterLogoArea">
+          <!-- Logo -->
+          <div class="yui-bd">
+            <div class="yui-g shade">
+              <div id="ctl00_HeaderLogo_Zone1PlaceHolder">
+                <div id="ste_container_HeaderLogoSpan" class="ContentItemContainer">
+                  <div class="ContentItemButtonPanel">
+                  </div>
+                  <a href="http://www.aipp.com.au/"><span id="masterHeaderImage"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ContentRecordPageButtonPanel">
+          </div>
+        </div>
+        <div id="Menu" class="ClearFix">
+          <div id="masterTopBarAuxiliary" class="ClearFix">
+            <div role="navigation">
+              <a id="ctl00_LoginStatus1" accesskey="l" href="https://www.aipp.com.au/Shared_Content/Sign_In.aspx">Sign In</a>
+              <ul class='NavigationUnorderedList'>
+                <li class='NavigationListItem'></li>
+                <li class='NavigationListItem'><a id="ctl00_Auxiliary_Auxiliary_rptWrapper_Auxiliary_rptWrapper_rpt_ctl02_NavigationLink" class="NavigationLink" href="http://www.aipp.com.au/AIPP/aipp_store/AIPP_live/Store/StoreLayouts/Store_Home.aspx">aipp store</a></li>
+                <li class='NavigationListItem'><a id="ctl00_Auxiliary_Auxiliary_rptWrapper_Auxiliary_rptWrapper_rpt_ctl03_NavigationLink" class="NavigationLink" href="https://www.aipp.com.au/AIPP/Cart/AIPP_live/Store/StoreLayouts/Cart_Home.aspx">Cart <span id="CartItemCount"><span class="cartEmpty"><span class="cartSprite"></span></span></span></a></li>
+              </ul>
+              <div id="masterSocialNetworking">
+                <div class="yui-bd">
+                  <div class="yui-g shade">
+                    <div id="ctl00_SocialNetworking_Zone1PlaceHolder">
+                      <div id="ste_container_SocialNetworking" class="ContentItemContainer">
+                        <div class="ContentItemButtonPanel">
+                        </div>
+                        <a href="http://www.facebook.com/AIPPOfficial" title="Visit our Facebook page" target="_blank">
+                          <img style="width: 24px; height: 24px; border-width: 0px;" alt="Facebook icon" src="http://www.aipp.com.au/App_Themes/AIPP_Austin/images/Facebook-LogoSm.png" /></a>
+                        <a href="http://twitter.com/#!/aippnational" title="Visit our Twitter page" target="_blank">
+                          <img style="width: 24px; height: 24px; border-width: 0px;" alt="Twitter icon" src="http://www.aipp.com.au/App_Themes/AIPP_Austin/images/Twitter-LogoSm.png" /></a>
+                        <a href="http://www.aippblog.com/" title="Visit our National Blog" target="_blank">
+                          <img style="width: 24px; height: 24px; border-width: 0px;" alt="Blog icon" src="http://www.aipp.com.au/App_Themes/AIPP_Austin/images/Blog-LogoSm.png" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ContentRecordPageButtonPanel">
+                </div>
+              </div>
+            </div>
+            <div role="search">
+            </div>
+            <div>
+              <img id="ctl00_KeepAliveTarget" src="http://www.aipp.com.au/AsiCommon/Images/3x3.gif" alt=" " style="border-width: 0px;" />
+            </div>
+          </div>
+          <div id="masterTopBarAuxiliaryBottom">
+          </div>
+        </div>
+        <div id="ctl00_NavPanel" role="navigation">
+          <div id="ctl00_TemplateMainNavigation_Primary_NavMenu" class="RadMenu RadMenu_Austin rmSized" style="width: 100%; z-index: 2999;">
+            <ul class="rmRootGroup rmHorizontal">
+              <li class="rmItem rmFirst"><a href="http://www.aipp.com.au/AIPP/Home/AIPP_live/Default.aspx" class="rmLink rmRootLink"><span class="rmText">Home</span></a></li>
+              <li class="rmItem "><a href="http://www.aipp.com.au/AIPP/Find_a_Pro/AIPP_live/Find.aspx" class="rmLink rmRootLink rmFocused"><span class="rmText">Find a Pro</span></a></li>
+              <li class="rmItem "><a href="http://www.aipp.com.au/AIPP/Join_the_AIPP/AIPP_live/Join_the_AIPP.aspx" class="rmLink rmRootLink"><span class="rmText">Join the AIPP</span></a></li>
+              <li class="rmItem "><a href="http://www.aipp.com.au/AIPP/Events/AIPP_live/Upcoming_AIPP_Events.aspx" class="rmLink rmRootLink"><span class="rmText">Events</span></a></li>
+              <li class="rmItem "><a href="http://www.aipp.com.au/AIPP/Sponsors/Sponsors/AIPP_live/Sponsors/Sponsors.aspx" class="rmLink rmRootLink"><span class="rmText">Sponsors</span></a></li>
+              <li class="rmItem "><a href="http://www.aipp.com.au/AIPP/Contact/AIPP_live/ContactUs.aspx" class="rmLink rmRootLink"><span class="rmText">Contact</span></a></li>
+              <li class="rmItem rmLast"><a href="http://www.aipp.com.au/AIPP/Sitemap/Sitemap.aspx" class="rmLink rmRootLink"><span class="rmText">Sitemap</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="bd">
+      <div id="masterContentArea">
+        <div id="masterSideBarPanel" class="yui-b">
+        </div>
+        <div id="yui-main">
+          <div class="yui-b">
+            <!-- Group Breadcrumbs, Proxy and Page Tasks so they can be controlled together -->
+            <div id="masterReferenceArea" class="ClearFix">
+              <div id="masterMainBreadcrumb" role="navigation">
+                <!-- This control will display the currently applicable Breadcrumb Navigation (if any) -->
+                <a href="#breadcrumbskiplink" id="breadcrumbhref" class="screen-reader-text show-on-focus">Skip breadcrumb navigation</a>
+                <a id="breadcrumbskiplink" tabindex="-1"></a>
+              </div>
+              <div id="masterMainImpersonation">
+                <!-- This control displays the On Behalf Of control -->
+              </div>
+            </div>
+            <!-- This panel contains the Main content area for a page -->
+            <a id="contentstart" tabindex="-1"></a>
+            <div id="ctl00_ContentPanel" role="main" class="ContentPanel">
+              <div id="ctl00_UserMessagesUpdatePanel">
+                <!-- This provides a placeholder for any applicable User Messages that a page needs to display -->
+              </div>
+              <div id="ctl00_TemplatePrintDisplay">
+              </div>
+              <div id="ctl00_TemplateBody_WebPartManager1___Drag" style="display: none; position: absolute; z-index: 32000; filter: alpha(opacity=75);">
+              </div>
+              <div class="yui-bd">
+                <div class="yui-g shade">
+                  <div id="ctl00_TemplateBody_WebPartZone1Header" class=""></div>
+                  <div id="ste_container_ContentPage1" class="ContentItemContainer">
+                    <div id="WebPartZone1_Page1" class="WebPartZone ">
+                      <div class="iMIS-WebPart">
+                        @RenderBody()
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ContentRecordPageButtonPanel">
+              </div>
+            </div>
+            <!-- This panel will contain the Button panel for any page that has command buttons (e.g., Save/Cancel) -->
+            <div id="ctl00_ButtonPanel" class="ButtonPanel NotPrinted">
+              <div id="masterMainButtonBar" class="CommandBar">
+                <span id="ctl00_ButtonBar"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="masterFooterPush"></div>
+  </div>
+  <footer id="ft">
+    <div id="masterFooterContent" class="ClearFix">
+      <div id="masterFooterCommunications">
+        <div class="yui-bd">
+          <div class="yui-g shade">
+            <div id="ctl00_FooterCommunications_Zone1PlaceHolder">
+              <div id="ste_container_FooterCommunications" class="ContentItemContainer">
+                <div class="ContentItemButtonPanel">
+                </div>
+                <div id="masterFooterConnectWithUs">
+                  <div style="text-align: right;">
+                    <img style="width: 100px; height: 100px;" alt="Good Practice Logo" src="http://www.aipp.com.au/App_Themes/AIPP_Austin/images/goodPractice.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ContentRecordPageButtonPanel">
+        </div>
+      </div>
+      <div id="masterFooterTable" class="ClearFix">
+        <table>
+          <tr>
+            <td><a target="_blank" href="http://www.appa.aippblog.com/">
+              <img src="http://www.aipp.com.au/imis_prod/images/CanonAPPA.jpg" /></a></td>
+            <td><a target="_blank" href="http://www.aipptheevent.com.au/">
+              <img src="http://www.aipp.com.au/imis_prod/images/NikonEvent.jpg" /></a></td>
+            <td><a target="_blank" href="http://www.stateawards.aippblog.com/">
+              <img src="http://www.aipp.com.au/imis_prod/images/EpsonState.jpg" /></a></td>
+            <td><a target="_blank" href="http://www.rodemic.com/">
+              <img src="http://www.aipp.com.au/imis_prod/images/Rode.jpg" /></a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

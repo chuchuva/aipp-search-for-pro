@@ -1,0 +1,11 @@
+﻿@model dynamic
+
+@{
+  ViewBag.Title = "Directory";
+}
+
+@foreach (var photographer in Model)
+{
+  @Html.ActionLink((string)photographer.Name, "Show", new {id = (string)photographer.ID,
+    slug = (string)photographer.Slug})<br />
+}

@@ -1,0 +1,71 @@
+﻿@model dynamic
+
+@section ExtraHead {
+<!--
+  <PageMap>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="http://www.aipp.com.au@(Model.LogoPath)"/>
+      <Attribute name="width" value="150"/>
+      <Attribute name="height" value="150"/>
+    </DataObject>
+  </PageMap>
+-->
+}
+
+<div class="photographer">
+  <br>
+  <br>
+  <table cellpadding="0" cellspacing="0" width="100%" border="0">
+    <tbody>
+      <tr>
+        <td width="220" align="center">
+          <img src="@Model.LogoPath" alt="" align="top" style="border-width: 0px; border-style: None;"></td>
+        <td valign="top" class="name-honours">
+          <h3>@Model.Name</h3>
+          <h3>@Model.Company</h3>
+          <br>
+          <br>
+          AIPP Honours: &nbsp;@Model.Designation<br>
+          APPA Honours: &nbsp;@Model.Category<br>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <br>
+
+  <table cellpadding="0" cellspacing="0" width="100%" border="0">
+    <tbody>
+      <tr>
+        <td valign="top" style="padding-left: 20px;" class="mpvtd" width="200">
+          <h3>Phone:</h3>
+          @Model.Work_Phone<br>
+          <br>
+          <h3>Mobile:</h3>
+          @Model.Toll_Free<br>
+          <br>
+          <h3>Email:</h3>
+          <a href="mailto:@Model.Email">@Model.Email</a><br>
+          <br>
+          @if (!string.IsNullOrEmpty(@Model.Website))
+          {
+            <h3>Website:</h3>
+            <a href="http://@Model.Website/">@Model.Website</a><br>
+          }
+          <br>
+          <br>
+          <br>
+          <img src="/IS/img/Aipp-Accredited-logo.gif" style="border-width: 0px;">
+        </td>
+        <td valign="top" class="profile" align="left">
+          <h3>Profile: </h3>
+          @Model.Profile
+          <br>
+          <br>
+          <br>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
