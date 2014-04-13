@@ -45,6 +45,7 @@ namespace SearchForPro.Controllers
          {
             photographer.Website = photographer.Website.Substring(7);
          }
+         photographer.ProfileHtml = HtmlUtilities.MarkdownMini(photographer.Profile);
          ViewBag.Title = photographer.Name;
          return View(photographer);
       }
