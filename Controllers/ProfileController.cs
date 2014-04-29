@@ -73,16 +73,15 @@ namespace SearchForPro.Controllers
 
       private static IEnumerable<dynamic> GetAllPhotographers()
       {
-         int topCount = (int)(DateTime.Now - new DateTime(2014, 4, 8)).TotalHours * 10;
          IEnumerable<dynamic> list;
          using (var connection = GetOpenConnection())
          {
-            list = connection.Query(string.Format(
-               @"select top {0} ID, First_Name, Last_Name, Last_Updated 
+            list = connection.Query(
+               @"select ID, First_Name, Last_Name, Last_Updated 
                from Name where ID in 
                   (select ContactMaster from UserMain where IsDisabled = 0) and
                (Member_Type = 'A' or Member_Type = 'AS')
-               order by Last_Name", topCount));
+               order by Last_Name");
          }
          foreach (var photographer in list)
          {
