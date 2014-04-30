@@ -60,7 +60,8 @@
         </td>
         <td valign="top" class="profile" align="left">
           <h3>Profile</h3>
-          @Html.Raw(Model.ProfileHtml)
+          @(!string.IsNullOrEmpty(Model.ProfileHtml) ? Html.Raw(Model.ProfileHtml) :
+            "This Accredited Professional Photographer has not yet completed their profile.")
           <br>
           <br>
           <br>
