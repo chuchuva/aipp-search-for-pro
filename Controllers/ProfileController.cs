@@ -31,7 +31,7 @@ namespace SearchForPro.Controllers
                @"select n.ID, First_Name, Last_Name, Company, Work_Phone, Toll_Free,
                Email, Website, Category, Designation, Profile, Member_Logo_Path 
                from Name n inner join member_info m on n.ID = m.ID 
-               where n.id = @id and (Member_Type = 'A' or Member_Type = 'AS')",
+               where n.id = @id and Member_Type IN ('A', 'AS', 'L')",
                new { id }).FirstOrDefault();
          }
 
@@ -83,7 +83,7 @@ namespace SearchForPro.Controllers
                @"select ID, First_Name, Last_Name, Last_Updated 
                from Name where ID in 
                   (select ContactMaster from UserMain where IsDisabled = 0) and
-               (Member_Type = 'A' or Member_Type = 'AS')
+               Member_Type IN ('A', 'AS', 'L')
                order by Last_Name");
          }
          foreach (var photographer in list)
