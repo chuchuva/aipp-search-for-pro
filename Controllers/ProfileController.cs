@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 using SearchForPro.Helpers;
 using System.Xml.Linq;
+using SearchForPro.Models;
 
 namespace SearchForPro.Controllers
 {
@@ -40,6 +41,8 @@ namespace SearchForPro.Controllers
          photographer.LogoPath = (string.IsNullOrEmpty(photographer.Member_Logo_Path) ?
             "/IS/img/nologo.jpg" : string.Format("/ProfileImages/{0}/{1}",
             photographer.ID, photographer.Member_Logo_Path));
+         photographer.AippHonours = Honours.Convert(photographer.Designation);
+         photographer.AppaHonours = Honours.Convert(photographer.Category);
          if (!string.IsNullOrEmpty(photographer.Website) &&
              photographer.Website.StartsWith("http://"))
          {

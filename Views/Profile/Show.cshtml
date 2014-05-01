@@ -25,8 +25,14 @@
           <h3>@Model.Company</h3>
           <br>
           <br>
-          AIPP Honours: &nbsp;@Model.Designation<br>
-          APPA Honours: &nbsp;@Model.Category<br>
+          @if (!string.IsNullOrEmpty(Model.AippHonours))
+          {
+            <text>AIPP Honours: </text>@Model.AippHonours<br>
+          }
+          @if (!string.IsNullOrEmpty(Model.AppaHonours))
+          {
+            <text>APPA Honours: </text>@Model.AppaHonours<br>
+          }
         </td>
       </tr>
     </tbody>
