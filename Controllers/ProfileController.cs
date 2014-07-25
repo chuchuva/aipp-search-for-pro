@@ -37,7 +37,7 @@ namespace SearchForPro.Controllers
          }
 
          if (photographer == null)
-            return Content("not found");
+            return HttpNotFound();
          photographer.Name = photographer.First_Name + " " + photographer.Last_Name;
          photographer.LogoPath = (string.IsNullOrEmpty(photographer.Member_Logo_Path) ?
             "/IS/img/nologo.jpg" : string.Format("/ProfileImages/{0}/{1}",
